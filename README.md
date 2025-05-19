@@ -15,8 +15,6 @@ This application shows how to implement JWT authentication in a Go application u
 
 ## RSA Key Pair
 
-For demonstration purposes only, this repository includes the RSA private and public keys. In a real production application, you would never commit private keys to your repository.
-
 To generate your own RSA key pair for testing:
 
 ```bash
@@ -26,6 +24,9 @@ openssl genrsa -out private_key.pem 2048
 # Generate corresponding public key
 openssl rsa -in private_key.pem -outform PEM -pubout -out public_key.pem
 ```
+
+> [!NOTE]
+> In a real production application, never commit private keys to a repository.
 
 ## Usage
 
