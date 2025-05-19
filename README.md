@@ -11,6 +11,22 @@ This application shows how to implement JWT authentication in a Go application u
 - Protected routes with JWT authentication
 - Echo middleware configuration
 
+## Getting Started
+
+## RSA Key Pair
+
+For demonstration purposes only, this repository includes the RSA private and public keys. In a real production application, you would never commit private keys to your repository.
+
+To generate your own RSA key pair for testing:
+
+```bash
+# Generate private key
+openssl genrsa -out private_key.pem 2048
+
+# Generate corresponding public key
+openssl rsa -in private_key.pem -outform PEM -pubout -out public_key.pem
+```
+
 ## Usage
 
 1. Start the server:
