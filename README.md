@@ -13,7 +13,7 @@ This application shows how to implement JWT authentication in a Go application u
 
 ## Getting Started
 
-## RSA Key Pair
+### RSA Key Pair
 
 To generate your own RSA key pair for testing:
 
